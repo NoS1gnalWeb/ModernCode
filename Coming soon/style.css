@@ -1,0 +1,48 @@
+.container .wallpaper img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.container .overlay {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .overlay .text {
+  text-align: center;
+}
+
+.container .overlay .text h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 120px;
+}
+
+.container .overlay .text span {
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+/*# sourceMappingURL=style.css.map */
