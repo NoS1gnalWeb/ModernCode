@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+}
+.notif{
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding:3px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    background: rgb(12, 123, 187);
+    z-index: -9999;
+}
+.title h1{
+    font-size: large;
+    font-weight: lighter;
+    text-align: center;
+    color:white;
+}
+.hide{
+    opacity: 0;
+    transition: .5s;
+}
+
+.show{   
+   opacity: 1;
+   transition: .5s;
+   animation: show .5s normal;
+}
+
+.btn{
+    border:none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background: #3ddf90;
+    padding: 10px 80px 10px 80px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: .5s;
+}
+.btn:focus{
+    box-shadow: none;
+    outline: none;
+}
+@keyframes show{
+    0%{transform:translateY(-100px);}
+    100%{transform:translateY(0px);}
+}
